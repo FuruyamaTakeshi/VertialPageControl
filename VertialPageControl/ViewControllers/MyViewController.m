@@ -71,13 +71,19 @@
 //    self.pageNumberLabel.text = [NSString stringWithFormat:@"Page %d", pageNumber + 1];
     
     UILabel *label = [[UILabel alloc] init];
-    label.frame = CGRectMake(0, 20, 320, 100);
+    label.frame = CGRectMake(0, 50, 320, 100);
     label.textAlignment = NSTextAlignmentCenter;
     label.text =  [NSString stringWithFormat:@"Page %d", pageNumber + 1];
     [self.view addSubview:label];
     self.pageNumberLabel = label;
     
-    
+    [self setBackColor];
 }
 
+- (void)setBackColor
+{
+    NSInteger colorNumber = pageNumber % 3;
+    NSArray *array = [NSArray arrayWithObjects:[UIColor colorWithWhite:0.9 alpha:1.0], [UIColor colorWithWhite:0.75 alpha:0.5], [UIColor colorWithWhite:0.4 alpha:0.25], nil];
+    self.view.backgroundColor = [array objectAtIndex:colorNumber];
+}
 @end

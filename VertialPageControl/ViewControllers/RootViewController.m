@@ -47,6 +47,8 @@
 
 #import "RootViewController.h"
 #import "MyViewController.h"
+#import "FTTableViewController.h"
+
 
 static NSString *kNameKey = @"nameKey";
 static NSString *kImageKey = @"imageKey";
@@ -60,7 +62,7 @@ static NSString *kImageKey = @"imageKey";
 @end
 
 #pragma mark -
-#define PAGE_MAX_COUNTS 30
+#define PAGE_MAX_COUNTS 10
 @implementation RootViewController
 
 - (void)viewDidLoad
@@ -89,13 +91,15 @@ static NSString *kImageKey = @"imageKey";
     
     self.pageControl.numberOfPages = numberPages;
     self.pageControl.currentPage = 0;
-    
+    [self.view becomeFirstResponder];
     // pages are created on demand
     // load the visible page
     // load the page on either side to avoid flashes when the user starts scrolling
     //
     [self loadScrollViewWithPage:0];
     [self loadScrollViewWithPage:1];
+    self.pageControl.currentPage = self.currntPage;
+    [self gotoPage:NO];
 }
 
 // rotation support for iOS 5.x and earlier, note for iOS 6.0 and later this will not be called
@@ -116,11 +120,11 @@ static NSString *kImageKey = @"imageKey";
         [view removeFromSuperview];
     }
     
-    NSUInteger numPages = self.contentList.count;
+    NSUInteger numPages = PAGE_MAX_COUNTS;
     
     // adjust the contentSize (larger or smaller) depending on the orientation
     self.scrollView.contentSize =
-        CGSizeMake(CGRectGetWidth(self.scrollView.frame) * numPages, CGRectGetHeight(self.scrollView.frame));
+        CGSizeMake(CGRectGetWidth(self.scrollView.frame), CGRectGetHeight(self.scrollView.frame) * numPages);
     
     // clear out and reload our pages
     self.viewControllers = nil;
@@ -141,12 +145,12 @@ static NSString *kImageKey = @"imageKey";
 {
     if (page >= PAGE_MAX_COUNTS)
         return;
-    
+
     // replace the placeholder if necessary
-    MyViewController *controller = [self.viewControllers objectAtIndex:page];
+    FTTableViewController *controller = [self.viewControllers objectAtIndex:page];
     if ((NSNull *)controller == [NSNull null])
     {
-        controller = [[MyViewController alloc] initWithPageNumber:page];
+        controller = [[FTTableViewController alloc] initWithPageNumber:page];
         [self.viewControllers replaceObjectAtIndex:page withObject:controller];
     }
     
@@ -161,10 +165,6 @@ static NSString *kImageKey = @"imageKey";
         [self addChildViewController:controller];
         [self.scrollView addSubview:controller.view];
         [controller didMoveToParentViewController:self];
-        
-        NSDictionary *numberItem = [self.contentList objectAtIndex:page];
-        controller.numberImage.image = [UIImage imageNamed:[numberItem valueForKey:kImageKey]];
-        controller.numberTitle.text = [numberItem valueForKey:kNameKey];
     }
 }
 
@@ -173,7 +173,7 @@ static NSString *kImageKey = @"imageKey";
 {
     // switch the indicator when more than 50% of the previous/next page is visible
     CGFloat pageHeight = CGRectGetHeight(self.scrollView.frame);
-    NSUInteger page = floor((self.scrollView.contentOffset.y - pageHeight / 2) / pageHeight) + 1;
+    NSUInteger page = floor((self.scrollView.contentOffset.y - pageHeight / 4) / pageHeight) + 1;
     self.pageControl.currentPage = page;
     
     // load the visible page and the page on either side of it (to avoid flashes when the user starts scrolling)

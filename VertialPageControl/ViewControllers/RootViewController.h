@@ -48,7 +48,7 @@
 #import <UIKit/UIKit.h>
 
 @interface RootViewController : UIViewController <UIScrollViewDelegate>
-
+@property (nonatomic, assign) NSUInteger currntPage;
 @property (nonatomic, strong) NSArray *contentList;
 
 @end

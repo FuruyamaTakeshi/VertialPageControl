@@ -24,18 +24,8 @@
 		A416B6A61816A1150091CBC1 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A416B6A31816A1150091CBC1 /* MyViewController.m */; };
 		A416B6A71816A1150091CBC1 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A416B6A51816A1150091CBC1 /* RootViewController.m */; };
 		A416B6AA1816A1C30091CBC1 /* content_iPhone.plist in Resources */ = {isa = PBXBuildFile; fileRef = A416B6A81816A1C30091CBC1 /* content_iPhone.plist */; };
-		A416B6B41816A1FA0091CBC1 /* small_five.png in Resources */ = {isa = PBXBuildFile; fileRef = A416B6AE1816A1FA0091CBC1 /* small_five.png */; };
-		A416B6B51816A1FA0091CBC1 /* small_four.png in Resources */ = {isa = PBXBuildFile; fileRef = A416B6AF1816A1FA0091CBC1 /* small_four.png */; };
-		A416B6B61816A1FA0091CBC1 /* small_one.png in Resources */ = {isa = PBXBuildFile; fileRef = A416B6B01816A1FA0091CBC1 /* small_one.png */; };
-		A416B6B71816A1FA0091CBC1 /* small_six.png in Resources */ = {isa = PBXBuildFile; fileRef = A416B6B11816A1FA0091CBC1 /* small_six.png */; };
-		A416B6B81816A1FA0091CBC1 /* small_three.png in Resources */ = {isa = PBXBuildFile; fileRef = A416B6B21816A1FA0091CBC1 /* small_three.png */; };
-		A416B6B91816A1FA0091CBC1 /* small_two.png in Resources */ = {isa = PBXBuildFile; fileRef = A416B6B31816A1FA0091CBC1 /* small_two.png */; };
-		A416B6C11816A2060091CBC1 /* large_five.png in Resources */ = {isa = PBXBuildFile; fileRef = A416B6BB1816A2060091CBC1 /* large_five.png */; };
-		A416B6C21816A2060091CBC1 /* large_four.png in Resources */ = {isa = PBXBuildFile; fileRef = A416B6BC1816A2060091CBC1 /* large_four.png */; };
-		A416B6C31816A2060091CBC1 /* large_one.png in Resources */ = {isa = PBXBuildFile; fileRef = A416B6BD1816A2060091CBC1 /* large_one.png */; };
-		A416B6C41816A2060091CBC1 /* large_six.png in Resources */ = {isa = PBXBuildFile; fileRef = A416B6BE1816A2060091CBC1 /* large_six.png */; };
-		A416B6C51816A2060091CBC1 /* large_three.png in Resources */ = {isa = PBXBuildFile; fileRef = A416B6BF1816A2060091CBC1 /* large_three.png */; };
-		A416B6C61816A2060091CBC1 /* large_two.png in Resources */ = {isa = PBXBuildFile; fileRef = A416B6C01816A2060091CBC1 /* large_two.png */; };
+		A416B6C91816A9770091CBC1 /* FTSummaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A416B6C81816A9770091CBC1 /* FTSummaryTableViewController.m */; };
+		A416B6CD18171A040091CBC1 /* FTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A416B6CC18171A040091CBC1 /* FTTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +50,8 @@
 		A416B67B1816A03C0091CBC1 /* FTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTAppDelegate.h; sourceTree = "<group>"; };
 		A416B67C1816A03C0091CBC1 /* FTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTAppDelegate.m; sourceTree = "<group>"; };
 		A416B67F1816A03C0091CBC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A416B6811816A03C0091CBC1 /* FTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTViewController.h; sourceTree = "<group>"; };
-		A416B6821816A03C0091CBC1 /* FTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTViewController.m; sourceTree = "<group>"; };
+		A416B6811816A03C0091CBC1 /* FTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FTViewController.h; path = ../FTViewController.h; sourceTree = "<group>"; };
+		A416B6821816A03C0091CBC1 /* FTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FTViewController.m; path = ../FTViewController.m; sourceTree = "<group>"; };
 		A416B6841816A03C0091CBC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A416B68A1816A03C0091CBC1 /* VertialPageControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VertialPageControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A416B68B1816A03C0091CBC1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -73,18 +63,10 @@
 		A416B6A41816A1150091CBC1 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		A416B6A51816A1150091CBC1 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		A416B6A91816A1C30091CBC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/content_iPhone.plist; sourceTree = "<group>"; };
-		A416B6AE1816A1FA0091CBC1 /* small_five.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_five.png; sourceTree = "<group>"; };
-		A416B6AF1816A1FA0091CBC1 /* small_four.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_four.png; sourceTree = "<group>"; };
-		A416B6B01816A1FA0091CBC1 /* small_one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_one.png; sourceTree = "<group>"; };
-		A416B6B11816A1FA0091CBC1 /* small_six.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_six.png; sourceTree = "<group>"; };
-		A416B6B21816A1FA0091CBC1 /* small_three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_three.png; sourceTree = "<group>"; };
-		A416B6B31816A1FA0091CBC1 /* small_two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_two.png; sourceTree = "<group>"; };
-		A416B6BB1816A2060091CBC1 /* large_five.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = large_five.png; sourceTree = "<group>"; };
-		A416B6BC1816A2060091CBC1 /* large_four.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = large_four.png; sourceTree = "<group>"; };
-		A416B6BD1816A2060091CBC1 /* large_one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = large_one.png; sourceTree = "<group>"; };
-		A416B6BE1816A2060091CBC1 /* large_six.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = large_six.png; sourceTree = "<group>"; };
-		A416B6BF1816A2060091CBC1 /* large_three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = large_three.png; sourceTree = "<group>"; };
-		A416B6C01816A2060091CBC1 /* large_two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = large_two.png; sourceTree = "<group>"; };
+		A416B6C71816A9770091CBC1 /* FTSummaryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTSummaryTableViewController.h; sourceTree = "<group>"; };
+		A416B6C81816A9770091CBC1 /* FTSummaryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTSummaryTableViewController.m; sourceTree = "<group>"; };
+		A416B6CB18171A040091CBC1 /* FTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTTableViewController.h; sourceTree = "<group>"; };
+		A416B6CC18171A040091CBC1 /* FTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +96,6 @@
 		A416B6601816A03C0091CBC1 = {
 			isa = PBXGroup;
 			children = (
-				A416B6AB1816A1D60091CBC1 /* Resources */,
 				A416B6721816A03C0091CBC1 /* VertialPageControl */,
 				A416B6911816A03C0091CBC1 /* VertialPageControlTests */,
 				A416B66B1816A03C0091CBC1 /* Frameworks */,
@@ -145,12 +126,9 @@
 		A416B6721816A03C0091CBC1 /* VertialPageControl */ = {
 			isa = PBXGroup;
 			children = (
-				A416B6A11816A1150091CBC1 /* ViewControllers */,
 				A416B67B1816A03C0091CBC1 /* FTAppDelegate.h */,
 				A416B67C1816A03C0091CBC1 /* FTAppDelegate.m */,
-				A416B67E1816A03C0091CBC1 /* Main.storyboard */,
-				A416B6811816A03C0091CBC1 /* FTViewController.h */,
-				A416B6821816A03C0091CBC1 /* FTViewController.m */,
+				A416B6A11816A1150091CBC1 /* ViewControllers */,
 				A416B6841816A03C0091CBC1 /* Images.xcassets */,
 				A416B6731816A03C0091CBC1 /* Supporting Files */,
 			);
@@ -190,57 +168,27 @@
 		A416B6A11816A1150091CBC1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A416B6A21816A1150091CBC1 /* MyViewController.h */,
-				A416B6A31816A1150091CBC1 /* MyViewController.m */,
-				A416B6A41816A1150091CBC1 /* RootViewController.h */,
-				A416B6A51816A1150091CBC1 /* RootViewController.m */,
+				A416B67E1816A03C0091CBC1 /* Main.storyboard */,
+				A416B6C71816A9770091CBC1 /* FTSummaryTableViewController.h */,
+				A416B6C81816A9770091CBC1 /* FTSummaryTableViewController.m */,
+				A416B6CA1816FD050091CBC1 /* PageControl */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		A416B6AB1816A1D60091CBC1 /* Resources */ = {
+		A416B6CA1816FD050091CBC1 /* PageControl */ = {
 			isa = PBXGroup;
 			children = (
-				A416B6AC1816A1E20091CBC1 /* Images */,
+				A416B6811816A03C0091CBC1 /* FTViewController.h */,
+				A416B6821816A03C0091CBC1 /* FTViewController.m */,
+				A416B6A41816A1150091CBC1 /* RootViewController.h */,
+				A416B6A51816A1150091CBC1 /* RootViewController.m */,
+				A416B6A21816A1150091CBC1 /* MyViewController.h */,
+				A416B6A31816A1150091CBC1 /* MyViewController.m */,
+				A416B6CB18171A040091CBC1 /* FTTableViewController.h */,
+				A416B6CC18171A040091CBC1 /* FTTableViewController.m */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		A416B6AC1816A1E20091CBC1 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				A416B6BA1816A2060091CBC1 /* LargeImages */,
-				A416B6AD1816A1FA0091CBC1 /* SmallImages */,
-			);
-			name = Images;
-			sourceTree = "<group>";
-		};
-		A416B6AD1816A1FA0091CBC1 /* SmallImages */ = {
-			isa = PBXGroup;
-			children = (
-				A416B6AE1816A1FA0091CBC1 /* small_five.png */,
-				A416B6AF1816A1FA0091CBC1 /* small_four.png */,
-				A416B6B01816A1FA0091CBC1 /* small_one.png */,
-				A416B6B11816A1FA0091CBC1 /* small_six.png */,
-				A416B6B21816A1FA0091CBC1 /* small_three.png */,
-				A416B6B31816A1FA0091CBC1 /* small_two.png */,
-			);
-			name = SmallImages;
-			path = VertialPageControl/SmallImages;
-			sourceTree = "<group>";
-		};
-		A416B6BA1816A2060091CBC1 /* LargeImages */ = {
-			isa = PBXGroup;
-			children = (
-				A416B6BB1816A2060091CBC1 /* large_five.png */,
-				A416B6BC1816A2060091CBC1 /* large_four.png */,
-				A416B6BD1816A2060091CBC1 /* large_one.png */,
-				A416B6BE1816A2060091CBC1 /* large_six.png */,
-				A416B6BF1816A2060091CBC1 /* large_three.png */,
-				A416B6C01816A2060091CBC1 /* large_two.png */,
-			);
-			name = LargeImages;
-			path = VertialPageControl/LargeImages;
+			name = PageControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,22 +268,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A416B6C31816A2060091CBC1 /* large_one.png in Resources */,
-				A416B6C11816A2060091CBC1 /* large_five.png in Resources */,
-				A416B6B61816A1FA0091CBC1 /* small_one.png in Resources */,
-				A416B6B81816A1FA0091CBC1 /* small_three.png in Resources */,
-				A416B6C61816A2060091CBC1 /* large_two.png in Resources */,
 				A416B6851816A03C0091CBC1 /* Images.xcassets in Resources */,
 				A416B6771816A03C0091CBC1 /* InfoPlist.strings in Resources */,
-				A416B6C41816A2060091CBC1 /* large_six.png in Resources */,
 				A416B6801816A03C0091CBC1 /* Main.storyboard in Resources */,
-				A416B6B71816A1FA0091CBC1 /* small_six.png in Resources */,
-				A416B6B91816A1FA0091CBC1 /* small_two.png in Resources */,
 				A416B6AA1816A1C30091CBC1 /* content_iPhone.plist in Resources */,
-				A416B6B41816A1FA0091CBC1 /* small_five.png in Resources */,
-				A416B6B51816A1FA0091CBC1 /* small_four.png in Resources */,
-				A416B6C21816A2060091CBC1 /* large_four.png in Resources */,
-				A416B6C51816A2060091CBC1 /* large_three.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +290,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A416B6CD18171A040091CBC1 /* FTTableViewController.m in Sources */,
+				A416B6C91816A9770091CBC1 /* FTSummaryTableViewController.m in Sources */,
 				A416B67D1816A03C0091CBC1 /* FTAppDelegate.m in Sources */,
 				A416B6791816A03C0091CBC1 /* main.m in Sources */,
 				A416B6A61816A1150091CBC1 /* MyViewController.m in Sources */,
@@ -395,6 +333,7 @@
 				A416B67F1816A03C0091CBC1 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		A416B6941816A03C0091CBC1 /* InfoPlist.strings */ = {
@@ -449,7 +388,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -482,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
