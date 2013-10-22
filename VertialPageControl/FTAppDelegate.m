@@ -7,6 +7,7 @@
 //
 
 #import "FTAppDelegate.h"
+#import "RootViewController.h"
 
 @implementation FTAppDelegate
 

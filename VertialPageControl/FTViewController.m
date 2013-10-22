@@ -9,6 +9,8 @@
 #import "FTViewController.h"
 
 @interface FTViewController ()
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
 @end
 
